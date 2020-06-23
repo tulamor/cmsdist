@@ -124,7 +124,7 @@ cat << \EOF_TOOLFILE >%i/etc/scram.d/boost_header.xml
     <environment name="BOOSTHEADER_BASE" default="@TOOL_ROOT@"/>
     <environment name="INCLUDE" default="$BOOSTHEADER_BASE/include"/>
   </client>
-  <runtime name="CMSSW_FWLITE_INCLUDE_PATH" value="INCLUDE" type="path"/>
+  <runtime name="CMSSW_FWLITE_INCLUDE_PATH" value="$INCLUDE" type="path"/>
   <use name="sockets"/>
   <use name="root_cxxdefaults"/>
   <runtime name="ROOT_INCLUDE_PATH" value="$INCLUDE" type="path"/>
